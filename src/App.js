@@ -1,5 +1,8 @@
 import React,{useEffect, useState} from 'react'
+import RecipeCard from './components/RecipeCard';
+
 import './App.css';
+
 
 const App = () => {
 
@@ -18,6 +21,7 @@ const App = () => {
   return(
     <div>
       <h1>Recipe Mrc </h1>
+      <RecipeCard/>
     </div>
   )
 }
