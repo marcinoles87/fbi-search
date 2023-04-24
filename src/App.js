@@ -1,12 +1,12 @@
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-    
+const App = () => {
+  return(
+    <div>
+      <h1>Recipe Mrc </h1>
     </div>
-  );
+  )
 }
 
 export default App;
