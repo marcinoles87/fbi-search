@@ -11,11 +11,11 @@ const App = () => {
 
 
   useEffect( () => {
-    fetch('https://swapi.dev/api/people/1/')
+    fetch('https://swapi.dev/api/people/')
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      setRecipe(data.data)
+      setRecipe(data.results)
     })
 
     
@@ -35,6 +35,7 @@ const App = () => {
               key={index}
               name={people.name}
               height={people.height}
+             
             />
           )
         })}
