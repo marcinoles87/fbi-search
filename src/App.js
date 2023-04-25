@@ -7,15 +7,15 @@ import './App.css';
 
 const App = () => {
 
-  const [recipe,setRecipe] = useState("")
+  const [recipe,setRecipe] = useState([])
 
 
   useEffect( () => {
-    fetch('https://catfact.ninja/fact')
+    fetch('https://catfact.ninja/breeds')
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      setRecipe(data)
+      setRecipe(data.data)
     })
 
     
@@ -27,9 +27,9 @@ const App = () => {
         <input className='search-input' type='text'></input>
         <button className='search-button' type='submit'> Search</button>
 
-        {recipe}
+       
 
-        {/* {recipe.map( (dog , index) => {
+        {recipe.map( (dog , index) => {
           return(
             <RecipeCard 
               key={index}
@@ -37,7 +37,7 @@ const App = () => {
               country={dog.country}
             />
           )
-        })} */}
+        })}
       </form>
       
   
