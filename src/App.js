@@ -1,12 +1,13 @@
 import React,{useEffect, useState} from 'react'
 import RecipeCard from './components/RecipeCard';
 
+
 import './App.css';
 
 
 const App = () => {
 
-  let [recipe,setRecipe] = useState()
+  const [recipe,setRecipe] = useState("")
 
 
   useEffect( () => {
@@ -14,11 +15,11 @@ const App = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      setRecipe(data.fact)
+      setRecipe(data)
+    })
 
-      
-    } , [])
-  })
+    
+  } , [] )
 
   return(
     <div className='App'>
