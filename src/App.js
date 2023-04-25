@@ -11,7 +11,7 @@ const App = () => {
 
 
   useEffect( () => {
-    fetch('https://catfact.ninja/breeds')
+    fetch('https://swapi.dev/api/people/1/')
     .then(response => response.json())
     .then(data => {
       console.log(data)
@@ -29,12 +29,12 @@ const App = () => {
 
        
 
-        {recipe.map( (dog , index) => {
+        {recipe.map( (people , index) => {
           return(
             <RecipeCard 
               key={index}
-              name={dog.breed}
-              country={dog.country}
+              name={people.name}
+              height={people.height}
             />
           )
         })}
