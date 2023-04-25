@@ -19,17 +19,14 @@ const App = () => {
   })
 
   return(
-    <div>
-      <h1>Recipe Mrc </h1>
-      {recipe.map( (dog , index) => {
-        return(
-          <RecipeCard key={index}
-            name={dog.breed}
-            country={dog.country}
-          />
-        )
-
-      })}
+    <div className='App'>
+      <form className='search-form'>
+        <input className='search-input' type='text'></input>
+        <button className='search-button' type='submit'> Search</button>
+      </form>
+      
+  
+   
       
     </div>
   )
