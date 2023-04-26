@@ -1,6 +1,15 @@
 .App{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     
 }
+
+.search-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 30vw;
+
+}
+
