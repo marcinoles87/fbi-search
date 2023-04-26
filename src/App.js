@@ -14,7 +14,7 @@ const App = () => {
     fetch('https://api.fbi.gov/wanted/v1/list')
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      console.log(data.items)
       setRecipe(data.items)
     })
 
@@ -30,11 +30,12 @@ const App = () => {
       
 
         {recipe.map( (people , index) => {
+          console.log(people.images.large)
           return(
             <RecipeCard 
               key={index}
               name={people.title}
-              img={people.images.orginal}
+              img={people.images}
               text={people.reward_text}
             />
           )
