@@ -34,12 +34,14 @@ const App = () => {
             <RecipeCard 
               key={index}
               name={people.title}
-              img={people.images.thumb}
-             
+              img={people.images.orginal}
+              text={people.reward_text}
             />
           )
         })}
       </form>
+
+  
       
   
    

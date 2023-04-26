@@ -2,14 +2,16 @@ import React from 'react'
 
 const RecipeCard = (props) => {
 
-    const {name , img} = props
+    const {name , img , text} = props
+
+    console.log(img)
     return(
         <div>
             <h1>Future Info </h1>
-            <img src={img} alt='wanted'></img>
+            <img src={img} url={img} alt='wanted'></img>
             <ul>
                 <li>{name}</li>
-                <li></li>
+                <li>{text}</li>
                 <li></li>
                 <li></li>
             </ul>
