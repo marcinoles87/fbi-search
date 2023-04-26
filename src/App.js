@@ -30,12 +30,12 @@ const App = () => {
       
 
         {recipe.map( (people , index) => {
-          console.log(people.images.large)
+          console.log(people.images[0])
           return(
             <RecipeCard 
               key={index}
               name={people.title}
-              img={people.images}
+              img={people.images.large}
               text={people.reward_text}
             />
           )
