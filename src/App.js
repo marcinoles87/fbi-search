@@ -29,18 +29,22 @@ const App = () => {
         <button className='search-button' type='submit'> Search</button>
 
       
-
+        <div className='wanted-card'>
         {recipe.map( (people , index) => {
           console.log(people.images[0].thumb)
           return(
+            <div className='wanted-person'>
             <RecipeCard 
               key={index}
               name={people.title}
               img={people.images[0].thumb}
               text={people.reward_text}
             />
+            </div>
           )
         })}
+
+        </div>
       </form>
 
   

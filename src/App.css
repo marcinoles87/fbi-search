@@ -3,13 +3,22 @@
     flex-direction: column;
     justify-content: center;
     
+    
 }
 
-.search-form{
+
+
+.wanted-card{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 30vw;
+    justify-content: space-around;
+    
+}
 
+.wanted-person{
+    margin:10px;
+    width: 30%;
+    border: 1px solid black;
 }
 
