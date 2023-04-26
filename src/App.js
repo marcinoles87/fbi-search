@@ -23,6 +23,7 @@ const App = () => {
 
   return(
     <div className='App'>
+      <h1>FBI SEARCH MOST WANTED PEOPLE</h1>
       <form className='search-form'>
         <input className='search-input' type='text'></input>
         <button className='search-button' type='submit'> Search</button>
@@ -30,12 +31,12 @@ const App = () => {
       
 
         {recipe.map( (people , index) => {
-          console.log(people.images[0])
+          console.log(people.images[0].thumb)
           return(
             <RecipeCard 
               key={index}
               name={people.title}
-              img={people.images.large}
+              img={people.images[0].thumb}
               text={people.reward_text}
             />
           )
