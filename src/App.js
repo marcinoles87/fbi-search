@@ -11,11 +11,11 @@ const App = () => {
 
 
   useEffect( () => {
-    fetch('https://world.openfoodfacts.org/api/v0/product/737628064502')
+    fetch('https://api.fbi.gov/wanted/v1/list')
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      setRecipe(data.product)
+      setRecipe(data.items)
     })
 
     
@@ -27,19 +27,18 @@ const App = () => {
         <input className='search-input' type='text'></input>
         <button className='search-button' type='submit'> Search</button>
 
-       {recipe.image_url} <br></br>
-       {recipe.brand_owner}
+      
 
-        {/* {recipe.map( (people , index) => {
+        {recipe.map( (people , index) => {
           return(
             <RecipeCard 
               key={index}
-              name={people.name}
-              height={people.height}
+              name={people.title}
+              img={people.images.thumb}
              
             />
           )
-        })} */}
+        })}
       </form>
       
   
