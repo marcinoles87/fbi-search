@@ -4,7 +4,7 @@ import './recipecard.css'
 
 const RecipeCard = (props) => {
 
-    const {name , img , text} = props
+    const {name , img , text , description} = props
 
     
     return(
@@ -14,7 +14,7 @@ const RecipeCard = (props) => {
             <ul>
                 <li>Name : {name}</li>
                 <li>Info :{text}</li>
-                <li></li>
+                <li>Description: {description}</li>
                 <li></li>
             </ul>
         </div>

@@ -39,6 +39,7 @@ const App = () => {
               name={people.title}
               img={people.images[0].thumb}
               text={people.reward_text}
+              description={people.description}
             />
             </div>
           )
