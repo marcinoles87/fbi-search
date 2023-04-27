@@ -21,11 +21,16 @@ const App = () => {
     
   } , [] )
 
+  
+
   const handleOnChange = (e) => {
     const valueInput = e.target.value
-    console.log(valueInput)
-    const result = recipe.filter(word => word.title.length > 20)
-    
+    const result = recipe.filter(checkWord)
+    console.log(result)
+  }
+
+  const checkWord = (recipe) => {
+    return recipe.length >= 12;
   }
 
 
