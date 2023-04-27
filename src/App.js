@@ -25,13 +25,12 @@ const App = () => {
 
   const handleOnChange = (e) => {
     const valueInput = e.target.value
-    const result = recipe.filter(checkWord)
-    console.log(result)
+    
+    console.log(valueInput)
+    console.log(recipe.title)
   }
 
-  const checkWord = (recipe) => {
-    return recipe.length >= 12;
-  }
+
 
 
   return(
