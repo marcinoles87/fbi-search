@@ -12,8 +12,8 @@ const RecipeCard = (props) => {
             <h1>Future Info </h1>
             <img src={img} alt='img'></img>
             <ul>
-                <li>{name}</li>
-                <li>{text}</li>
+                <li>Name : {name}</li>
+                <li>Info :{text}</li>
                 <li></li>
                 <li></li>
             </ul>

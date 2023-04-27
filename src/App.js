@@ -25,7 +25,7 @@ const App = () => {
     <div className='App'>
       <h1>FBI SEARCH MOST WANTED PEOPLE</h1>
       <form className='search-form'>
-        <input className='search-input' type='text'></input>
+        <input className='search-input' type='text' placeholder='search...'></input>
         <button className='search-button' type='submit'> Search</button>
 
       

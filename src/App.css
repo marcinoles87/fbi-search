@@ -6,6 +6,15 @@
     
 }
 
+.search-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 .wanted-card{
@@ -16,9 +25,18 @@
     
 }
 
+
 .wanted-person{
     margin:10px;
     width: 30%;
     border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    justify-content: center;
 }
 

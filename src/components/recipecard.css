@@ -1,5 +1,9 @@
 .card{
     text-align: center;
     justify-content: center;
-    background-color: rgb(255, 196, 196);
+   
+}
+
+.card ul{
+    list-style: none;
 }
