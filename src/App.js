@@ -21,19 +21,27 @@ const App = () => {
     
   } , [] )
 
+  const handleOnChange = (e) => {
+    const valueInput = e.target.value
+    console.log(valueInput)
+    const result = recipe.filter(word => word.title.length > 20)
+    
+  }
+
+
   return(
     <div className='App'>
       <h1>FBI SEARCH MOST WANTED PEOPLE</h1>
       <form className='search-form'>
-        <input className='search-input' type='text' placeholder='search...'></input>
+        <input className='search-input' type='text' placeholder='search...' onChange={handleOnChange}></input>
         <button className='search-button' type='submit'> Search</button>
 
       
         <div className='wanted-card'>
         {recipe.map( (people , index) => {
-          console.log(people.images[0].thumb)
+          
           return(
-            <div className='wanted-person'>
+            <div className='wanted-person' key={index}>
             <RecipeCard 
               key={index}
               name={people.title}
