@@ -27,7 +27,7 @@ const App = () => {
     const valueInput = e.target.value.toUpperCase()
     console.log(valueInput)
    
-    const search = recipe.filter(person => person.weight === valueInput)
+    const search = recipe.filter(person => person.title === valueInput)
     setRecipe(search)
 
   }
