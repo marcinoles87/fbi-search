@@ -24,10 +24,11 @@ const App = () => {
 
   const handleOnChange = (e) => {
     console.log(recipe)
-    const valueInput = e.target.value
+    const valueInput = e.target.value.toUpperCase()
     console.log(valueInput)
    
-    const search = recipe.filter(person => person.name === valueInput)
+    const search = recipe.filter(person => person.weight === valueInput)
+    setRecipe(search)
 
   }
 
