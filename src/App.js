@@ -18,16 +18,17 @@ const App = () => {
       setRecipe(data.items)
     })
 
-    
   } , [] )
 
   
 
   const handleOnChange = (e) => {
+    console.log(recipe)
     const valueInput = e.target.value
-    
     console.log(valueInput)
-    console.log(recipe.title)
+   
+    const search = recipe.filter(person => person.name === valueInput)
+
   }
 
 
@@ -52,6 +53,7 @@ const App = () => {
               img={people.images[0].thumb}
               text={people.reward_text}
               description={people.description}
+              weight={people.weight_max}
             />
             </div>
           )
