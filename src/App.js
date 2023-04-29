@@ -67,6 +67,7 @@ const App = () => {
               text={people.reward_text}
               description={people.description}
               weight={people.weight_max}
+              national={people.nationality}
             />
             </div>
           )

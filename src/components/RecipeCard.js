@@ -4,7 +4,7 @@ import './recipecard.css'
 
 const RecipeCard = (props) => {
 
-    const {name , img , text , description , weight} = props
+    const {name , img , text , description , weight , national} = props
 
     const data =new Date().getFullYear()
     const data2 =new Date().getDate()
@@ -18,6 +18,7 @@ const RecipeCard = (props) => {
             <ul>
                 <li><span>Name :</span> {name}</li>
                 <li>Weight: {weight}</li>
+                <li>National : {national}</li>
                 <li>Info :{text}</li>
                 <li>Description: {description}</li>
                 <li>Actual info date : {data}-{data2}-{data3}</li>
