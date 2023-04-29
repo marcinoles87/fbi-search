@@ -35,6 +35,8 @@ const App = () => {
     console.log(searchPeople)
     console.log(recipe)
 
+    setRecipe(searchPeople)
+
   }
 
   
