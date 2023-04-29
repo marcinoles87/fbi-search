@@ -29,7 +29,7 @@ const App = () => {
     console.log(valueInput)
    
     setSearch(
-    searchPeople = recipe.filter(person => person.weight_max > 100)
+    searchPeople = recipe.filter(person => person.title.includes(valueInput))
     )
 
     console.log(searchPeople)
