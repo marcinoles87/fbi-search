@@ -8,6 +8,7 @@ import './App.css';
 const App = () => {
 
   const [recipe,setRecipe] = useState([])
+  const [searchPeople , setSearch] = useState([])
 
 
   useEffect( () => {
@@ -28,8 +29,11 @@ const App = () => {
     console.log(valueInput)
    
     const search = recipe.filter(person => person.title === valueInput)
-    setRecipe(search)
 
+  }
+
+  const handleOnClick = () => {
+    setRecipe(search)
   }
 
 
@@ -40,7 +44,7 @@ const App = () => {
       <h1>FBI SEARCH MOST WANTED PEOPLE</h1>
       <form className='search-form'>
         <input className='search-input' type='text' placeholder='search...' onChange={handleOnChange}></input>
-        <button className='search-button' type='submit'> Search</button>
+        <button className='search-button' type='submit' onClick={handleOnClick}> Search</button>
 
       
         <div className='wanted-card'>
