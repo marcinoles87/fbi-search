@@ -8,7 +8,7 @@ import './App.css';
 const App = () => {
 
   const [recipe,setRecipe] = useState([])
-  const [searchPeople , setSearch] = useState([])
+  let [searchPeople , setSearch] = useState([])
 
 
   useEffect( () => {
@@ -28,12 +28,20 @@ const App = () => {
     const valueInput = e.target.value.toUpperCase()
     console.log(valueInput)
    
-    const search = recipe.filter(person => person.title === valueInput)
+    setSearch(
+    searchPeople = recipe.filter(person => person.weight_max > 100)
+    )
+
+    console.log(searchPeople)
+    console.log(recipe)
 
   }
 
-  const handleOnClick = () => {
-    setRecipe(search)
+  
+
+  const handleOnClick = (e) => {
+    e.preventDefault()
+    setRecipe(searchPeople)
   }
 
 
