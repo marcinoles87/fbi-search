@@ -12,7 +12,7 @@ const App = () => {
 
 
   useEffect( () => {
-    fetch('https://api.fbi.gov/wanted/v1/list')
+    fetch('https://api.fbi.gov/wanted/list')
     .then(response => response.json())
     .then(data => {
       console.log(data.items)
@@ -38,8 +38,6 @@ const App = () => {
     setRecipe(searchPeople)
 
   }
-
-  
 
   const handleOnClick = (e) => {
     e.preventDefault()
