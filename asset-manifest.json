@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fbi-search/static/css/main.5ba144d6.css",
+    "main.js": "/fbi-search/static/js/main.3014bb7c.js",
+    "static/js/787.13aee4be.chunk.js": "/fbi-search/static/js/787.13aee4be.chunk.js",
+    "index.html": "/fbi-search/index.html",
+    "main.5ba144d6.css.map": "/fbi-search/static/css/main.5ba144d6.css.map",
+    "main.3014bb7c.js.map": "/fbi-search/static/js/main.3014bb7c.js.map",
+    "787.13aee4be.chunk.js.map": "/fbi-search/static/js/787.13aee4be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ba144d6.css",
+    "static/js/main.3014bb7c.js"
+  ]
+}
